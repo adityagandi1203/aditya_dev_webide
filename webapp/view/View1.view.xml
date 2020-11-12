@@ -1,0 +1,103 @@
+<mvc:View controllerName="aaa.aaa.controller.View1" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml"
+	displayBlock="true" xmlns="sap.m"  xmlns:l="sap.ui.layout"  xmlns:f="sap.ui.layout.form">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					
+					
+			<!--<ComboBox>-->
+			<!--	<tooltip text="Please select a value"></tooltip>-->
+				
+			<!--	<items key="1" text="apple">-->
+					
+			<!--	</items>-->
+			<!--</ComboBox>-->
+			
+			
+			
+			<!--<Panel>-->
+				
+			<!--	<RadioButton groupName="GroupA" text="Option 1" selected="true" />-->
+			<!--<RadioButton groupName="GroupA" text="Option 2" />-->
+			<!--<RadioButton groupName="GroupA" text="Option 3" />-->
+			<!--<RadioButton groupName="GroupA" text="Option 4" />-->
+			<!--<RadioButton groupName="GroupA" text="Option 5" />-->
+			<!--</Panel>-->
+				
+		
+			
+			
+			<!--<Select>-->
+				
+			<!--</Select>-->
+			
+			<!--	<ComboBoxTextField>	</ComboBoxTextField>-->
+			<!--<HBox>-->
+			<!--	<TextArea rows="1"></TextArea>-->
+			<!--	<Button text="submit"></Button>-->
+			<!--</HBox>-->
+				
+			<!--<Dialog id="dia">-->
+			<!--	<endButton text="close" press="onclose">-->
+					
+			<!--	</endButton>-->
+			<!--</Dialog>-->
+			<!--<Panel>-->
+			<!--	<FlexBox -->
+			<!--	justifyContent="Center" alignItems="Center">-->
+				
+				
+			<!--	<items>-->
+			<!--		<Text text="hi" ></Text>-->
+			<!--		<Text text="whatsup!!!" class="input"></Text>-->
+			<!--		<Text text="howdy!!!" class="input"></Text>-->
+			<!--		<Text text="Byeee!!!" class="input"></Text>-->
+			<!--	</items>-->
+			<!--	</FlexBox></Panel>-->
+			<HBox width="100%" class="">
+			
+				<VBox width="35%" >
+				<f:SimpleForm class="styleapplied" id="statusreport" editable="true" layout="ResponsiveGridLayout"
+							labelSpanXL="3" labelSpanL="3"  columnsXL="4" columnsL="4"  emptySpanXL="1" emptySpanL="1"
+							labelSpanM="3" columnsM="3" emptySpanM="1" labelSpanS="4" columnsS="4" emptySpanS="1">
+							<f:content>
+								<Label class="labelalign" text="{i18n>status}"></Label>
+								<Select >
+									<items>
+										<core:Item key="1" text="{i18n>inactive}"></core:Item>
+										<core:Item key="2" text="{i18n>active}"></core:Item>
+										<core:Item key="3" text="{i18n>both}"></core:Item>
+									</items>
+								</Select>
+								<Label class="labelalign" text="{i18n>employeetype}"></Label>
+								<Select >
+									<items>
+										<core:Item key="1" text="{i18n>both}"></core:Item>
+										<core:Item key="2" text="{i18n>exempt}"></core:Item>
+										<core:Item key="3" text="{i18n>scheduled}"></core:Item>
+									</items>
+								</Select>
+							</f:content>
+						
+						</f:SimpleForm>
+						<Button class="searchbuttonalign" text="Search" type="Emphasized"></Button>
+					
+				</VBox>
+				
+				<VBox  width="65%">
+				
+				<Text text='Note: This report is used for viewing employee statuses for your subordinates (all exempt employees in your organization and any scheduled employee that reports directly to you). 
+			"Status" as a search criteria defaults to Inactive, but you have the option of selecting Active or Both. You may also limit your search to Employee Type (Salaried Exempt, Scheduled or Both). 
+					' class="margintop" ></Text>
+					
+				</VBox>
+				
+			</HBox>
+				
+	
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
